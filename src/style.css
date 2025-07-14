@@ -24,15 +24,41 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 2.5em;
   line-height: 1.1;
+}
+#top {
+  display: flex;
+  color: #888;
+  place-items: center;
+}
+
+#top ul {
+  display: flex;
+}
+
+#top li {
+  display: block;
+  padding: 1.5em;
+}
+
+#top li a {
+  color: #888;
+}
+
+#mode {
+  background: #1a1a1a;
+  height: 2em;
+  width: 2em;
+  border-radius: 2em;
+  margin-right: 3em;
+  margin-left: auto;
 }
 
 #app {
@@ -44,7 +70,7 @@ h1 {
 
 .logo {
   height: 6em;
-  padding: 1.5em;
+  padding: 0.5em;
   border-radius:6em;
   will-change: filter;
   transition: filter 300ms;

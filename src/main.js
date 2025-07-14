@@ -8,7 +8,7 @@ document.querySelector('#app').innerHTML = `
     </a>
     <h1>Shubert Munthali</h1>
     <h2>Hello!</h2>
-    <p>I am a software engineer from the other side of the earth, my interests in computing are Secure P2P networks, Blockchain, Cryptography, Algorithms and Data Structures and Mobile Development</p>
+    <p>I am a software engineer from the other side of the earth, my interests in computing are Secure P2P networks, Blockchain, Cryptography, Algorithms and Data Structures and Mobile Development.</p>
     <p class="read-the-docs">
       "To boldly go where no one has gone before" - Star Trek
     </p>
