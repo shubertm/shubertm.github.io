@@ -15,7 +15,7 @@
 
 a {
   font-weight: 500;
-  color: rgba(230, 226, 175, 0.67);
+  color: #888;
   text-decoration: inherit;
   will-change: filter;
   transition: filter 300ms;
