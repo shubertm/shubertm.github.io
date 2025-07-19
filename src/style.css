@@ -130,10 +130,11 @@ button:focus-visible {
     background-color: #ffffff;
   }
 
-  a:hover {
+  .top.nav ul li:hover {
     color: #f7df1eaa;
     filter: drop-shadow(0 0 5em #f7df1eaa);
   }
+
   button {
     background-color: #f9f9f9;
   }

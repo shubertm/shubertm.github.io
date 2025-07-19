@@ -1,6 +1,12 @@
 import './style.css'
 
-document.querySelector('#app').innerHTML = `
+const app = document.querySelector('#app')
+
+const me = document.querySelector('#me')
+
+const projects = document.querySelector('#projects')
+
+const mePage = `
   <div>
     <a href="https://github.com/shubertm" target="_blank">
       <img src="https://avatars.githubusercontent.com/u/87703131?s=400&u=e0668b4e4129b67bfc09758bb642fdaba14512f4&v=4" class="logo vanilla" alt="my avatar" />
@@ -13,3 +19,24 @@ document.querySelector('#app').innerHTML = `
     </p>
   </div>
 `
+
+const projectsPage = `
+    <div>
+        <h1>Projects</h1>
+    </div>
+`
+
+app.innerHTML = mePage
+
+me.addEventListener(
+    'click',
+    (event) => {
+        app.innerHTML = mePage
+    }
+)
+projects.addEventListener(
+    'click',
+    (event) => {
+        app.innerHTML = projectsPage
+    }
+)
