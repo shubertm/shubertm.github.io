@@ -23,11 +23,11 @@ const mePage = `
 const projectsPage = `
     <div>
         <h1>Projects</h1>
-        <ul>
+        <!--ul>
             <li>Amuzic</li>
             <li>Amuzeo</li>
             <li>Amuze</li>
-        </ul>
+        </--ul-->
     </div>
 `
 
