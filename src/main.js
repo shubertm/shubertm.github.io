@@ -39,6 +39,7 @@ me.addEventListener(
         app.innerHTML = mePage
     }
 )
+
 projects.addEventListener(
     'click',
     (event) => {
