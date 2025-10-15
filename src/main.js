@@ -3,6 +3,8 @@ import './style.css'
 const navItemFontWeightBold = "bold"
 const navItemFontWeightNormal = "normal"
 
+const gpgKeyId = "EF668CC147935682"
+
 const app = document.querySelector('#app')
 
 const me = document.querySelector('#me')
@@ -20,6 +22,11 @@ const mePage = `
     <p class="read-the-docs">
       "To boldly go where no one has gone before" - Star Trek
     </p>
+    <div id="gpgDiv">
+        <h4>GPG KEY:</h4>
+        <p id="gpgKey">${gpgKeyId}</p>
+        <img id="copyGPGKey" src="./assets/copy.svg" alt="Copy"/>
+    </div>
     <section id="tech-sect">
         <ul class="tech">
             <li>
@@ -95,6 +102,8 @@ app.innerHTML = mePage
 me.style.fontWeight = navItemFontWeightBold
 projects.style.fontWeight = navItemFontWeightNormal
 
+const copyGPGKey = document.querySelector('#gpgDiv')
+
 me.addEventListener(
     'click',
     (event) => {
@@ -112,3 +121,7 @@ projects.addEventListener(
         app.innerHTML = projectsPage
     }
 )
+
+copyGPGKey.addEventListener('click', event => {
+    navigator.clipboard.writeText(gpgKeyId)
+})

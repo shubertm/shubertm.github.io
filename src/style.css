@@ -188,6 +188,36 @@ button:focus-visible {
     width: 3em;
 }
 
+#gpgDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: 2em;
+    border-radius: 0.5em;
+    padding: 0.4em;
+    margin: auto;
+}
+
+#gpgDiv:hover {
+    cursor: pointer;
+}
+
+#gpgDiv:active {
+    background: #ece9e2;
+}
+
+#gpgDiv p {
+    margin: 1em;
+}
+
+#gpgDiv img {
+    width: 1.5em;
+}
+
+#gpgDiv img:hover {
+    cursor: pointer;
+}
 @media (prefers-color-scheme: light) {
     :root {
         color: #213547;
