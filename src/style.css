@@ -143,6 +143,10 @@ button:focus-visible {
     background: #E3EE9E;
 }
 
+#ark-builders {
+    background: #fde37f;
+}
+
 .project-list li a .project-icon {
     width: 4em;
     margin-left: 1em;

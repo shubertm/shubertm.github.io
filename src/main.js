@@ -1,5 +1,8 @@
 import './style.css'
 
+const navItemFontWeightBold = "bold"
+const navItemFontWeightNormal = "normal"
+
 const app = document.querySelector('#app')
 
 const me = document.querySelector('#me')
@@ -22,20 +25,26 @@ const mePage = `
 
 const projectsPage = `
     <div class="projects-container">
-        <h1>Some things in my collection</h1>
         <ul class="project-list">
             <li>
                 <a id="amuzic" class="project" href="https://play.google.com/store/apps/details?id=com.infbyte.amuzic">
-                    <img class="project-icon" src="./../public/assets/amuzic.svg" alt="project icon"/>
+                    <img class="project-icon" src="./assets/amuzic.svg" alt="project icon"/>
                     <p>Amuzic</p>
-                    <img id="play" class="repo-host" src="./../public/assets/play.webp" alt="google play icon"/>
+                    <img id="play" class="repo-host" src="./assets/play.webp" alt="google play icon"/>
                 </a>
             </li>
             <li>
                 <a id="amuzeo" class="project" href="https://github.com/shubertm/Amuzeo">
-                    <img class="project-icon" src="./../public/assets/amuzeo.svg" alt="project icon"/>
+                    <img class="project-icon" src="./assets/amuzeo.svg" alt="project icon"/>
                     <p>Amuzeo</p>
-                    <img class="repo-host" src="./../public/assets/github.svg" alt="github icon"/>
+                    <img class="repo-host" src="./assets/github.svg" alt="github icon"/>
+                </a>
+            </li>
+            <li>
+                <a id="ark-builders" class="project" href="https://github.com/ARK-Builders">
+                    <img class="project-icon" src="./assets/ark-builders.svg" alt="project icon"/>
+                    <p>ARK-Builders</p>
+                    <img class="repo-host" src="./assets/github.svg" alt="github icon"/>
                 </a>
             </li>
         </ul>
@@ -43,10 +52,14 @@ const projectsPage = `
 `
 
 app.innerHTML = mePage
+me.style.fontWeight = navItemFontWeightBold
+projects.style.fontWeight = navItemFontWeightNormal
 
 me.addEventListener(
     'click',
     (event) => {
+        me.style.fontWeight = navItemFontWeightBold
+        projects.style.fontWeight = navItemFontWeightNormal
         app.innerHTML = mePage
     }
 )
@@ -54,6 +67,8 @@ me.addEventListener(
 projects.addEventListener(
     'click',
     (event) => {
+        projects.style.fontWeight = navItemFontWeightBold
+        me.style.fontWeight = navItemFontWeightNormal
         app.innerHTML = projectsPage
     }
 )
