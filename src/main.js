@@ -20,6 +20,47 @@ const mePage = `
     <p class="read-the-docs">
       "To boldly go where no one has gone before" - Star Trek
     </p>
+    <section id="tech-sect">
+        <ul class="tech">
+            <li>
+                <img src="./assets/kotlin.svg" alt="Kotlin">
+            </li>
+            <li>
+                <img src="./assets/c++.svg" alt="C++">
+            </li>
+            <li>
+                <img src="./assets/javascript.svg" alt="Javascript">
+            </li>
+            <li>
+                <img src="./assets/typescript.svg" alt="Typescript">
+            </li>
+            <li>
+                <img src="./assets/python.svg" alt="Python">
+            </li>
+            <li>
+                <img src="./assets/java.svg" alt="Java">
+            </li>
+            <li>
+                <img src="./assets/rust.svg" alt="Rust">
+            </li>
+            <li>
+                <img src="./assets/android.svg" alt="Bitcoin">
+            </li>
+            <li>
+                <img src="./assets/bitcoin.svg" alt="Bitcoin">
+            </li>
+            <li>
+                <img src="./assets/polkadot.svg" alt="Polkadot">
+            </li>
+            <li>
+                <img src="./assets/postgresql.svg" alt="PostgreSQL">
+            </li>
+            <li>
+                <img src="./assets/sqlite.svg" alt="SQLite">
+            </li>
+            
+        </ul>
+    </section>
   </div>
 `
 
