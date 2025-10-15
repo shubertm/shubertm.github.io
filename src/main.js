@@ -16,7 +16,7 @@ const mePage = `
     </a>
     <h1>Shubert Munthali</h1>
     <h2>Hello!</h2>
-    <p>I am a software engineer from the other side of the earth, my interests in computing are Secure P2P networks, Blockchain, Cryptography, Algorithms and Data Structures and Mobile Development. I also take pleasure in exploring electronics and robotics, I mean... these sparking creations are awesome!</p>
+    <p>I am a <b>Software Engineer</b> from the other side of the earth, my interests in computing are <b>Secure P2P networks</b>, <b>Blockchain</b>, <b>Cryptography</b>, <b>Algorithms and Data Structures</b> and <b>Mobile Development</b>. I also take pleasure in exploring electronics and robotics, I mean... these sparking creations are awesome!</p>
     <p class="read-the-docs">
       "To boldly go where no one has gone before" - Star Trek
     </p>
@@ -57,8 +57,7 @@ const mePage = `
             </li>
             <li>
                 <img src="./assets/sqlite.svg" alt="SQLite">
-            </li>
-            
+            </li>        
         </ul>
     </section>
   </div>
