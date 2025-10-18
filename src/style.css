@@ -293,8 +293,8 @@ footer ul li:hover {
     cursor: pointer;
 }
 
-footer ul li:active {
-    background: #fde37f;
+footer ul .bitcoin:active {
+    background: rgba(247, 147, 26, 0.55);
 }
 
 footer li p {
