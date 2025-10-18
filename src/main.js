@@ -71,7 +71,6 @@ const mePage = `
 `
 
 const projectsPage = `
-    <div class="projects-container">
         <ul class="project-list">
             <li>
                 <a id="amuzic" class="project" href="https://play.google.com/store/apps/details?id=com.infbyte.amuzic">
@@ -95,7 +94,6 @@ const projectsPage = `
                 </a>
             </li>
         </ul>
-    </div>
 `
 
 app.innerHTML = mePage
