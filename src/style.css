@@ -279,6 +279,8 @@ footer img {
 
 footer ul {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 0;
 }
 
@@ -294,10 +296,14 @@ footer ul li:hover {
     cursor: pointer;
 }
 
-footer ul .bitcoin:active {
+footer ul #bitcoin:active {
     background: rgba(247, 147, 26, 0.55);
 }
 
 footer li p {
     margin: 1em;
+    width: 30vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
