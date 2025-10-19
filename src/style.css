@@ -112,8 +112,7 @@ button:focus-visible {
 
 .project-list {
     display: inline-block;
-    width: 60vw;
-    min-width: 22em;
+    width: 75vw;
     margin: auto;
     padding: 0;
 }
