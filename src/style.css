@@ -290,6 +290,7 @@ footer ul li {
     padding: 8px;
     height: 2em;
     border-radius: 0.5em;
+    margin: 0.5em;
 }
 
 footer ul li:hover {
@@ -301,8 +302,9 @@ footer ul #bitcoin:active {
 }
 
 footer li p {
-    margin: 1em;
+    margin-left: 0.5em;
     width: 30vw;
+    max-width: 12em;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
