@@ -301,6 +301,10 @@ footer ul #bitcoin:active {
     background: rgba(247, 147, 26, 0.55);
 }
 
+footer ul #ethereum:active {
+    background: rgba(98, 126, 234, 0.55);
+}
+
 footer li p {
     margin-left: 0.5em;
     width: 30vw;

@@ -99,7 +99,7 @@ me.style.fontWeight = navItemFontWeightBold
 projects.style.fontWeight = navItemFontWeightNormal
 
 const copyGPGKeyButton = document.querySelector('#gpgDiv')
-const currencyButton = document.querySelector('.currency')
+const currencyButtons = document.getElementsByClassName('currency')
 
 me.addEventListener(
     'click',
@@ -124,7 +124,11 @@ copyGPGKeyButton.addEventListener('click', event => {
     navigator.clipboard.writeText(keyId)
 })
 
-currencyButton.addEventListener('click', event => {
-    const address = currencyButton.querySelector('p').textContent
+for (const button of currencyButtons) {
+    button.addEventListener('click', () => { onClickCurrency(button) })
+}
+
+function onClickCurrency(button) {
+    const address = button.querySelector('p').textContent
     navigator.clipboard.writeText(address)
-})
+}
