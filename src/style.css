@@ -41,6 +41,7 @@ h1 {
 
 .top.nav ul {
     display: flex;
+    padding: 0;
 }
 
 .top.nav li {
