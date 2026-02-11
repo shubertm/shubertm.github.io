@@ -25,7 +25,7 @@ const mePage = `
     <div id="gpgDiv">
         <h4>GPG KEY:</h4>
         <p id="gpgKey">EF668CC147935682</p>
-        <img id="copyGPGKey" src="./assets/copy.svg" alt="Copy"/>
+        <img class="copy-icon" id="copyGPGKey" src="./assets/copy.svg" alt="Copy"/>
     </div>
     <section id="tech-sect">
         <ul class="tech">
@@ -48,7 +48,7 @@ const mePage = `
                 <img src="./assets/java.svg" alt="Java">
             </li>
             <li>
-                <img src="./assets/rust.svg" alt="Rust">
+                <img id="rust" src="./assets/rust.svg" alt="Rust">
             </li>
             <li>
                 <img src="./assets/android.svg" alt="Bitcoin">

@@ -228,44 +228,6 @@ h1 {
 #gpgDiv img:hover {
     cursor: pointer;
 }
-@media (prefers-color-scheme: light) {
-    :root {
-        color: #213547;
-        background-color: #ffffff;
-    }
-
-    .top.nav #mode {
-        background-color: #213547;
-    }
-
-    avatar:hover {
-        color: #f7df1eaa;
-        filter: drop-shadow(0 0 5em #f7df1eaa);
-    }
-    button {
-        background-color: #f9f9f9;
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        color: #ffffff;
-        background-color: #213547;
-    }
-
-    .top.nav #mode {
-        background-color: #ffffff;
-    }
-
-    .top.nav ul li:hover {
-        color: #f7df1eaa;
-        filter: drop-shadow(0 0 5em #f7df1eaa);
-    }
-
-    button {
-        background-color: #f9f9f9;
-    }
-}
 
 footer {
     display: flex;
@@ -318,4 +280,55 @@ footer li p {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        color: #213547;
+        background-color: #ffffff;
+    }
+
+    .top.nav #mode {
+        background-color: #213547;
+    }
+
+    avatar:hover {
+        color: #f7df1eaa;
+        filter: drop-shadow(0 0 5em #f7df1eaa);
+    }
+    button {
+        background-color: #f9f9f9;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        color: #ffffff;
+        background-color: #213547;
+    }
+
+    .top.nav #mode {
+        background-color: #ffffff;
+    }
+
+    .top.nav ul li:hover {
+        color: #f7df1eaa;
+        filter: drop-shadow(0 0 5em #f7df1eaa);
+    }
+
+    .copy-icon {
+        filter: invert(65%);
+    }
+
+    #rust {
+        filter: invert(1);
+    }
+
+    button {
+        background-color: #f9f9f9;
+    }
+
+    footer {
+        background-color: #374f67;
+    }
 }
