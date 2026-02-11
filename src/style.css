@@ -148,6 +148,33 @@ h1 {
     width: 100%;
 }
 
+.blogs {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+}
+
+.blogs .blog::before {
+    content: "-";
+    font-weight: bold;
+    color: whitesmoke;
+}
+.blogs .blog {
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    border-radius: 0.5em;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    text-decoration: none;
+    margin: 0;
+    text-decoration-style: dashed;
+    width: fit-content;
+    font-size: 16pt;
+}
+
 #tech-sect {
     margin-top: 4em;
 }

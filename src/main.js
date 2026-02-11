@@ -9,6 +9,8 @@ const me = document.querySelector('#me')
 
 const projects = document.querySelector('#projects')
 
+const blog = document.querySelector('#blog')
+
 const mePage = `
   <div>
     <a class="avatar" href="https://github.com/shubertm" target="_blank">
@@ -94,6 +96,26 @@ const projectsPage = `
         </ul>
 `
 
+const blogPage = `
+<ul class="blogs">
+            <li>
+                <a id="blog-0" class="blog" href="">
+                    <p>Bitcoin: The Freedom to Transact</p>
+                </a>
+            </li>
+            <li>
+                <a id="blog-1" class="blog" href="">
+                    <p>Blog-1</p>
+                </a>
+            </li>
+            <li>
+                <a id="blog-2" class="blog" href="">
+                    <p>Blog-2</p>
+                </a>
+            </li>
+        </ul>
+`
+
 app.innerHTML = mePage
 me.style.fontWeight = navItemFontWeightBold
 projects.style.fontWeight = navItemFontWeightNormal
@@ -106,6 +128,7 @@ me.addEventListener(
     (event) => {
         me.style.fontWeight = navItemFontWeightBold
         projects.style.fontWeight = navItemFontWeightNormal
+        blog.style.fontWeight = navItemFontWeightNormal
         app.innerHTML = mePage
     }
 )
@@ -115,9 +138,17 @@ projects.addEventListener(
     (event) => {
         projects.style.fontWeight = navItemFontWeightBold
         me.style.fontWeight = navItemFontWeightNormal
+        blog.style.fontWeight = navItemFontWeightNormal
         app.innerHTML = projectsPage
     }
 )
+
+blog.addEventListener('click', (event) => {
+    blog.style.fontWeight = navItemFontWeightBold
+    projects.style.fontWeight = navItemFontWeightNormal
+    me.style.fontWeight = navItemFontWeightNormal
+    app.innerHTML = blogPage
+})
 
 copyGPGKeyButton.addEventListener('click', event => {
     const keyId = copyGPGKeyButton.querySelector('p').textContent
