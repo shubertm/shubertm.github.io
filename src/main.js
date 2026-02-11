@@ -23,7 +23,7 @@ const mePage = `
     <div id="gpgDiv">
         <h4>GPG KEY:</h4>
         <p id="gpgKey">EF668CC147935682</p>
-        <img id="copyGPGKey" src="./assets/copy.svg" alt="Copy"/>
+        <img class="copy-icon" id="copyGPGKey" src="./assets/copy.svg" alt="Copy"/>
     </div>
     <section id="tech-sect">
         <ul class="tech">
