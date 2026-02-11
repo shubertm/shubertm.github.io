@@ -46,7 +46,7 @@ const mePage = `
                 <img src="./assets/java.svg" alt="Java">
             </li>
             <li>
-                <img src="./assets/rust.svg" alt="Rust">
+                <img id="rust" src="./assets/rust.svg" alt="Rust">
             </li>
             <li>
                 <img src="./assets/android.svg" alt="Bitcoin">

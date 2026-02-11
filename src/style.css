@@ -293,6 +293,10 @@ footer li p {
         filter: invert(65%);
     }
 
+    #rust {
+        filter: invert(1);
+    }
+
     button {
         background-color: #f9f9f9;
     }
