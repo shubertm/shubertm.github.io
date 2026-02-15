@@ -14,8 +14,12 @@
 }
 
 header {
+    display: flex;
     height: 10vh;
     width: 100%;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    align-items: center;
     background-color: #374f67;
 }
 
