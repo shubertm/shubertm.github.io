@@ -1,1 +1,0 @@
-# Bitcoin: The Freedom to Transact

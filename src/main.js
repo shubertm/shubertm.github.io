@@ -9,7 +9,7 @@ const me = document.querySelector('#me')
 
 const projects = document.querySelector('#projects')
 
-const blog = document.querySelector('#blog')
+const articles = document.querySelector('#articles')
 
 const mePage = `
   <div>
@@ -96,21 +96,11 @@ const projectsPage = `
         </ul>
 `
 
-const blogPage = `
-<ul class="blogs">
+const articlesPage = `
+<ul class="articles">
             <li>
-                <a id="blog-0" class="blog" href="">
+                <a id="article-0" class="article" href="/articles/bitcoin-freedom-money/">
                     <p>Bitcoin: The Freedom to Transact</p>
-                </a>
-            </li>
-            <li>
-                <a id="blog-1" class="blog" href="">
-                    <p>Blog-1</p>
-                </a>
-            </li>
-            <li>
-                <a id="blog-2" class="blog" href="">
-                    <p>Blog-2</p>
                 </a>
             </li>
         </ul>
@@ -128,7 +118,7 @@ me.addEventListener(
     (event) => {
         me.style.fontWeight = navItemFontWeightBold
         projects.style.fontWeight = navItemFontWeightNormal
-        blog.style.fontWeight = navItemFontWeightNormal
+        articles.style.fontWeight = navItemFontWeightNormal
         app.innerHTML = mePage
     }
 )
@@ -138,16 +128,16 @@ projects.addEventListener(
     (event) => {
         projects.style.fontWeight = navItemFontWeightBold
         me.style.fontWeight = navItemFontWeightNormal
-        blog.style.fontWeight = navItemFontWeightNormal
+        articles.style.fontWeight = navItemFontWeightNormal
         app.innerHTML = projectsPage
     }
 )
 
-blog.addEventListener('click', (event) => {
-    blog.style.fontWeight = navItemFontWeightBold
+articles.addEventListener('click', (event) => {
+    articles.style.fontWeight = navItemFontWeightBold
     projects.style.fontWeight = navItemFontWeightNormal
     me.style.fontWeight = navItemFontWeightNormal
-    app.innerHTML = blogPage
+    app.innerHTML = articlesPage
 })
 
 copyGPGKeyButton.addEventListener('click', event => {
