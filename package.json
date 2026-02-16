@@ -10,5 +10,9 @@
   },
   "devDependencies": {
     "vite": "^7.0.4"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "^6.0.2",
+    "vite-plugin-markdown": "^2.2.0"
   }
 }

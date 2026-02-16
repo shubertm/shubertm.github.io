@@ -9,6 +9,8 @@ const me = document.querySelector('#me')
 
 const projects = document.querySelector('#projects')
 
+const articles = document.querySelector('#articles')
+
 const mePage = `
   <div>
     <a class="avatar" href="https://github.com/shubertm" target="_blank">
@@ -94,7 +96,24 @@ const projectsPage = `
         </ul>
 `
 
-app.innerHTML = mePage
+const articlesPage = `
+<ul class="articles">
+            <li>
+                <a id="article-0" class="article" href="/articles/bitcoin-freedom-money/">
+                    <p>Bitcoin: The Freedom to Transact</p>
+                </a>
+            </li>
+        </ul>
+`
+
+let currentPage = sessionStorage.getItem("currentPage");
+
+if (!currentPage) {
+    sessionStorage.setItem("currentPage", mePage);
+    currentPage = mePage;
+}
+
+app.innerHTML = currentPage
 me.style.fontWeight = navItemFontWeightBold
 projects.style.fontWeight = navItemFontWeightNormal
 
@@ -106,7 +125,10 @@ me.addEventListener(
     (event) => {
         me.style.fontWeight = navItemFontWeightBold
         projects.style.fontWeight = navItemFontWeightNormal
+        articles.style.fontWeight = navItemFontWeightNormal
         app.innerHTML = mePage
+        currentPage = mePage
+        sessionStorage.setItem("currentPage", mePage)
     }
 )
 
@@ -115,9 +137,21 @@ projects.addEventListener(
     (event) => {
         projects.style.fontWeight = navItemFontWeightBold
         me.style.fontWeight = navItemFontWeightNormal
+        articles.style.fontWeight = navItemFontWeightNormal
         app.innerHTML = projectsPage
+        currentPage = projectsPage
+        sessionStorage.setItem("currentPage", projectsPage)
     }
 )
+
+articles.addEventListener('click', (event) => {
+    articles.style.fontWeight = navItemFontWeightBold
+    projects.style.fontWeight = navItemFontWeightNormal
+    me.style.fontWeight = navItemFontWeightNormal
+    app.innerHTML = articlesPage
+    currentPage = articlesPage
+    sessionStorage.setItem("currentPage", articlesPage)
+})
 
 copyGPGKeyButton.addEventListener('click', event => {
     const keyId = copyGPGKeyButton.querySelector('p').textContent

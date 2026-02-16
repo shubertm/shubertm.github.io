@@ -148,6 +148,33 @@ h1 {
     width: 100%;
 }
 
+.articles {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+}
+
+.articles .article:hover {
+    cursor: pointer;
+}
+.articles .article {
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    border-radius: 0.5em;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    text-decoration: underline;
+    margin: 0;
+    width: fit-content;
+    font-size: 16pt;
+}
+
+#article-space {
+    background: #fde37f;
+}
 #tech-sect {
     margin-top: 4em;
 }
@@ -265,7 +292,7 @@ footer li p {
         background-color: #213547;
     }
 
-    avatar:hover {
+    .avatar:hover {
         color: #f7df1eaa;
         filter: drop-shadow(0 0 5em #f7df1eaa);
     }
