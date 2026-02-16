@@ -106,7 +106,14 @@ const articlesPage = `
         </ul>
 `
 
-app.innerHTML = mePage
+let currentPage = sessionStorage.getItem("currentPage");
+
+if (!currentPage) {
+    sessionStorage.setItem("currentPage", mePage);
+    currentPage = mePage;
+}
+
+app.innerHTML = currentPage
 me.style.fontWeight = navItemFontWeightBold
 projects.style.fontWeight = navItemFontWeightNormal
 
@@ -120,6 +127,8 @@ me.addEventListener(
         projects.style.fontWeight = navItemFontWeightNormal
         articles.style.fontWeight = navItemFontWeightNormal
         app.innerHTML = mePage
+        currentPage = mePage
+        sessionStorage.setItem("currentPage", mePage)
     }
 )
 
@@ -130,6 +139,8 @@ projects.addEventListener(
         me.style.fontWeight = navItemFontWeightNormal
         articles.style.fontWeight = navItemFontWeightNormal
         app.innerHTML = projectsPage
+        currentPage = projectsPage
+        sessionStorage.setItem("currentPage", projectsPage)
     }
 )
 
@@ -138,6 +149,8 @@ articles.addEventListener('click', (event) => {
     projects.style.fontWeight = navItemFontWeightNormal
     me.style.fontWeight = navItemFontWeightNormal
     app.innerHTML = articlesPage
+    currentPage = articlesPage
+    sessionStorage.setItem("currentPage", articlesPage)
 })
 
 copyGPGKeyButton.addEventListener('click', event => {
