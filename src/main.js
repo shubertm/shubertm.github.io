@@ -57,9 +57,6 @@ const mePage = `
                 <img src="./assets/bitcoin.svg" alt="Bitcoin">
             </li>
             <li>
-                <img src="./assets/polkadot.svg" alt="Polkadot">
-            </li>
-            <li>
                 <img src="./assets/postgresql.svg" alt="PostgreSQL">
             </li>
             <li>
