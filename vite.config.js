@@ -18,6 +18,7 @@ export default defineConfig(
                 input: {
                     main: resolve(__dirname, 'index.html'),
                     "bitcoin-freedom-money": resolve(__dirname, 'articles/bitcoin-freedom-money/index.html'),
+                    "bitcoin-proof-of-work": resolve(__dirname, 'articles/bitcoin-proof-of-work/index.html'),
                 },
             },
         },
