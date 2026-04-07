@@ -163,6 +163,5 @@ for (const button of currencyButtons) {
 }
 
 function onClickCurrency(button) {
-    const address = button.querySelector('p').textContent
-    navigator.clipboard.writeText(address)
+    navigator.clipboard.writeText("shubertm.m@gmail.com")
 }
