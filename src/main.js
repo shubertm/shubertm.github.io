@@ -90,6 +90,13 @@ const projectsPage = `
                     <img class="repo-host" src="./assets/github.svg" alt="github icon"/>
                 </a>
             </li>
+            <li>
+                <a id="arkade-kotlin" class="project" href="https://github.com/shubertm/arkade-kotlin">
+                    <img class="project-icon" src="./assets/build-on-arkade-logo.svg" alt="project icon"/>
+                    <p>Kotlin Multiplatform SDK</p>
+                    <img class="repo-host" src="./assets/github.svg" alt="github icon"/>
+                </a>
+            </li>
         </ul>
 `
 
