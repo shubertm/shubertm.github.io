@@ -72,28 +72,28 @@ const projectsPage = `
             <li>
                 <a id="amuzic" class="project" href="https://play.google.com/store/apps/details?id=com.infbyte.amuzic">
                     <img class="project-icon" src="./assets/amuzic.svg" alt="project icon"/>
-                    <p>Amuzic</p>
+                    <p><b>Amuzic</b></p>
                     <img id="play" class="repo-host" src="./assets/play.webp" alt="google play icon"/>
                 </a>
             </li>
             <li>
                 <a id="amuzeo" class="project" href="https://github.com/shubertm/Amuzeo">
                     <img class="project-icon" src="./assets/amuzeo.svg" alt="project icon"/>
-                    <p>Amuzeo</p>
+                    <p><b>Amuzeo</b></p>
                     <img class="repo-host" src="./assets/github.svg" alt="github icon"/>
                 </a>
             </li>
             <li>
                 <a id="ark-builders" class="project" href="https://github.com/ARK-Builders">
                     <img class="project-icon" src="./assets/ark-builders.svg" alt="project icon"/>
-                    <p>ARK-Builders</p>
+                    <p><b>ARK-Builders</b></p>
                     <img class="repo-host" src="./assets/github.svg" alt="github icon"/>
                 </a>
             </li>
             <li>
                 <a id="arkade-kotlin" class="project" href="https://github.com/shubertm/arkade-kotlin">
                     <img class="project-icon" src="./assets/build-on-arkade-logo.svg" alt="project icon"/>
-                    <p>Kotlin Multiplatform SDK</p>
+                    <p><b>Kotlin Multiplatform SDK</b></p>
                     <img class="repo-host" src="./assets/github.svg" alt="github icon"/>
                 </a>
             </li>
