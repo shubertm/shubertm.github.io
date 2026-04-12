@@ -130,6 +130,15 @@ h1 {
     background: #fde37f;
 }
 
+#arkade-kotlin {
+    background: #a199d3;
+}
+
+#arkade-kotlin .project-icon {
+    height: 2em;
+    width: 12em;
+}
+
 .project-list li a .project-icon {
     width: 4em;
     margin-left: 1em;
