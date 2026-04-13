@@ -111,15 +111,21 @@ const articlesPage = `
 `
 
 let currentPage = sessionStorage.getItem("currentPage");
+const id = sessionStorage.getItem("currentNavItem")
+let currentNavItem = document.querySelector(`#${id}`);
 
 if (!currentPage) {
     sessionStorage.setItem("currentPage", mePage);
     currentPage = mePage;
 }
 
+if (!currentNavItem) {
+    sessionStorage.setItem("currentNavItem", me.id);
+    currentNavItem = me
+}
+
 app.innerHTML = currentPage
-me.style.fontWeight = navItemFontWeightBold
-projects.style.fontWeight = navItemFontWeightNormal
+currentNavItem.style.fontWeight = navItemFontWeightBold
 
 const copyGPGKeyButton = document.querySelector('#gpgDiv')
 const currencyButtons = document.getElementsByClassName('currency')
@@ -133,6 +139,7 @@ me.addEventListener(
         app.innerHTML = mePage
         currentPage = mePage
         sessionStorage.setItem("currentPage", mePage)
+        sessionStorage.setItem("currentNavItem", me.id)
     }
 )
 
@@ -145,6 +152,7 @@ projects.addEventListener(
         app.innerHTML = projectsPage
         currentPage = projectsPage
         sessionStorage.setItem("currentPage", projectsPage)
+        sessionStorage.setItem("currentNavItem", projects.id)
     }
 )
 
@@ -155,6 +163,7 @@ articles.addEventListener('click', (event) => {
     app.innerHTML = articlesPage
     currentPage = articlesPage
     sessionStorage.setItem("currentPage", articlesPage)
+    sessionStorage.setItem("currentNavItem", articles.id)
 })
 
 copyGPGKeyButton.addEventListener('click', event => {
