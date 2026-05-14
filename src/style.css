@@ -130,6 +130,15 @@ h1 {
     background: #fde37f;
 }
 
+#arkade-kotlin {
+    background: #a199d3;
+}
+
+#arkade-kotlin .project-icon {
+    height: 2em;
+    width: 12em;
+}
+
 .project-list li a .project-icon {
     width: 4em;
     margin-left: 1em;
@@ -146,6 +155,9 @@ h1 {
     font-size: 18pt;
     text-align: justify;
     width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .articles {

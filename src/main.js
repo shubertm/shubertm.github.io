@@ -18,7 +18,7 @@ const mePage = `
     </a>
     <h1>Shubert Munthali</h1>
     <h2>Hello!</h2>
-    <p>I am a <b>Software Engineer</b> from the other side of the earth, my interests in computing are <b>Secure P2P networks</b>, <b>Blockchain</b>, <b>Cryptography</b>, <b>Data Structures and Algorithms</b> and <b>Mobile Development</b>. I also take pleasure in exploring electronics and robotics, I mean... these sparking creations are awesome!</p>
+    <p>I am a <b>Software Engineer</b> from the other side of the earth, my interests in computing are <b>Secure P2P networks</b>, <b>Bitcoin</b>, <b>Cryptography</b>, <b>Data Structures and Algorithms</b> and <b>Mobile Development</b>. I also take pleasure in exploring electronics and robotics, I mean... these sparking creations are awesome!</p>
     <p class="star-trek">
       "To boldly go where no one has gone before" - Star Trek
     </p>
@@ -57,9 +57,6 @@ const mePage = `
                 <img src="./assets/bitcoin.svg" alt="Bitcoin">
             </li>
             <li>
-                <img src="./assets/polkadot.svg" alt="Polkadot">
-            </li>
-            <li>
                 <img src="./assets/postgresql.svg" alt="PostgreSQL">
             </li>
             <li>
@@ -75,21 +72,28 @@ const projectsPage = `
             <li>
                 <a id="amuzic" class="project" href="https://play.google.com/store/apps/details?id=com.infbyte.amuzic">
                     <img class="project-icon" src="./assets/amuzic.svg" alt="project icon"/>
-                    <p>Amuzic</p>
+                    <p><b>Amuzic</b></p>
                     <img id="play" class="repo-host" src="./assets/play.webp" alt="google play icon"/>
                 </a>
             </li>
             <li>
                 <a id="amuzeo" class="project" href="https://github.com/shubertm/Amuzeo">
                     <img class="project-icon" src="./assets/amuzeo.svg" alt="project icon"/>
-                    <p>Amuzeo</p>
+                    <p><b>Amuzeo</b></p>
                     <img class="repo-host" src="./assets/github.svg" alt="github icon"/>
                 </a>
             </li>
             <li>
                 <a id="ark-builders" class="project" href="https://github.com/ARK-Builders">
                     <img class="project-icon" src="./assets/ark-builders.svg" alt="project icon"/>
-                    <p>ARK-Builders</p>
+                    <p><b>ARK-Builders</b></p>
+                    <img class="repo-host" src="./assets/github.svg" alt="github icon"/>
+                </a>
+            </li>
+            <li>
+                <a id="arkade-kotlin" class="project" href="https://github.com/shubertm/arkade-kotlin">
+                    <img class="project-icon" src="./assets/build-on-arkade-logo.svg" alt="project icon"/>
+                    <p><b>Kotlin Multiplatform SDK</b></p>
                     <img class="repo-host" src="./assets/github.svg" alt="github icon"/>
                 </a>
             </li>
@@ -112,15 +116,21 @@ const articlesPage = `
 `
 
 let currentPage = sessionStorage.getItem("currentPage");
+const id = sessionStorage.getItem("currentNavItem")
+let currentNavItem = document.querySelector(`#${id}`);
 
 if (!currentPage) {
     sessionStorage.setItem("currentPage", mePage);
     currentPage = mePage;
 }
 
+if (!currentNavItem) {
+    sessionStorage.setItem("currentNavItem", me.id);
+    currentNavItem = me
+}
+
 app.innerHTML = currentPage
-me.style.fontWeight = navItemFontWeightBold
-projects.style.fontWeight = navItemFontWeightNormal
+currentNavItem.style.fontWeight = navItemFontWeightBold
 
 const copyGPGKeyButton = document.querySelector('#gpgDiv')
 const currencyButtons = document.getElementsByClassName('currency')
@@ -134,6 +144,7 @@ me.addEventListener(
         app.innerHTML = mePage
         currentPage = mePage
         sessionStorage.setItem("currentPage", mePage)
+        sessionStorage.setItem("currentNavItem", me.id)
     }
 )
 
@@ -146,6 +157,7 @@ projects.addEventListener(
         app.innerHTML = projectsPage
         currentPage = projectsPage
         sessionStorage.setItem("currentPage", projectsPage)
+        sessionStorage.setItem("currentNavItem", projects.id)
     }
 )
 
@@ -156,6 +168,7 @@ articles.addEventListener('click', (event) => {
     app.innerHTML = articlesPage
     currentPage = articlesPage
     sessionStorage.setItem("currentPage", articlesPage)
+    sessionStorage.setItem("currentNavItem", articles.id)
 })
 
 copyGPGKeyButton.addEventListener('click', event => {
@@ -168,6 +181,5 @@ for (const button of currencyButtons) {
 }
 
 function onClickCurrency(button) {
-    const address = button.querySelector('p').textContent
-    navigator.clipboard.writeText(address)
+    navigator.clipboard.writeText("shubertm.m@gmail.com")
 }
