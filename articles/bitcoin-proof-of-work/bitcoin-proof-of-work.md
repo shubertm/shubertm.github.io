@@ -3,7 +3,7 @@
 Proofs are a great tool of earning trust in all aspects of reality. Whether one gets incentives or credits,
 the work done should be commendable and verifiable. A builder gets paid for building a house, a plumber for installing 
 water piping systems in the house, a carpenter for the roofing, the furniture and cupboards. 
-A builder surely knows, they have to present a house according to client's needs or they will not get paid, same fo the 
+A builder surely knows, they have to present a house according to client's needs, or they will not get paid, same for the 
 plumber and the carpenter for their respective works, thus the builder earn trust by presenting a house to the client,
 a plumber must present a fully working piping system and the carpenter must present a no leakage roof, smart furniture
 and robust cupboards. 
@@ -12,12 +12,12 @@ The house, is the **proof of work** for the builder. Each house they build after
 credibility by prospective clients. The same is true for the plumber (the fully working piping system is their proof of work)
 and the carpenter (the roofing, the furniture and the cupboards are their proof of work).
 
-On the Bitcoin network there are builders called **miners**, but they are building a never ending city (the blockchain). 
+On the Bitcoin network there are builders called **miners**, but they are building a never-ending city (the blockchain). 
 These are many builders collaborating to build a city in which each time a lucky one among them by computation lottery 
 (the search for the difficult proof of work) is chosen to contribute a house to the city (the blockchain). 
 
 The house (block) being included is verified by all builders to have used the required and valid materials or else all 
-other builders will computationally reject its inclusion to the sacred city. In this way the houses can not be built
+other builders will computationally reject its inclusion to the sacred city. In this way the houses cannot be built
 within the city, they are built away from the city, because the city is sacred, no sin should enter through the gates.
 
 The most interesting thing is that all other builders do not care where the house was built as long as it fits the requirements
