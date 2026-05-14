@@ -109,7 +109,7 @@ const articlesPage = `
             </li>
             <li>
                 <a id="article-1" class="article" href="/articles/bitcoin-proof-of-work/">
-                    <p>Bitcoin's Proof of Work</p>
+                    <p>Bitcoin's Proof of Work: An Analogy</p>
                 </a>
             </li>
         </ul>
