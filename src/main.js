@@ -108,8 +108,13 @@ const articlesPage = `
                 </a>
             </li>
             <li>
-                <a id="article-1" class="article" href="/articles/bitcoin-proof-of-work/">
+                <a id="article-1" class="article" href="/articles/bitcoin-proof-of-work/analogy/">
                     <p>Bitcoin's Proof of Work: An Analogy</p>
+                </a>
+            </li>
+            <li>
+                <a id="article-0002" class="article" href="/articles/bitcoin-proof-of-work/technical-dive/">
+                    <p>Bitcoin's Proof of Work: Technical Dive</p>
                 </a>
             </li>
         </ul>
