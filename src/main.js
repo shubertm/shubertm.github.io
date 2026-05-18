@@ -114,7 +114,7 @@ const articlesPage = `
             </li>
             <li>
                 <a id="article-0002" class="article" href="/articles/bitcoin-proof-of-work/technical-dive/">
-                    <p>Bitcoin's Proof of Work: Technical Dive</p>
+                    <p>Bitcoin's Proof of Work: A Technical Dive</p>
                 </a>
             </li>
         </ul>
