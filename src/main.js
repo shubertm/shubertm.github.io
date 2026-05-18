@@ -103,13 +103,18 @@ const projectsPage = `
 const articlesPage = `
 <ul class="articles">
             <li>
-                <a id="article-0" class="article" href="/articles/bitcoin-freedom-money/">
+                <a id="article-0000" class="article" href="/articles/bitcoin-freedom-money/">
                     <p>Bitcoin: The Freedom to Transact</p>
                 </a>
             </li>
             <li>
-                <a id="article-1" class="article" href="/articles/bitcoin-proof-of-work/">
+                <a id="article-0001" class="article" href="/articles/bitcoin-proof-of-work/">
                     <p>Bitcoin's Proof of Work: An Analogy</p>
+                </a>
+            </li>
+            <li>
+                <a id="article-0003" class="article" href="/articles/bitcoin-keys-and-addresses/">
+                    <p>Bitcoin Keys and Addresses</p>
                 </a>
             </li>
         </ul>
