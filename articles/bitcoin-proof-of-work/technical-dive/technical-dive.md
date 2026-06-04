@@ -26,14 +26,14 @@ All valid transactions can be included in the next block through any other crite
 therefore a node has a right to choose which transactions to include in the next block which it wants to create. 
 For example they can prioritize transactions paying high fee, to maximize the block reward.
 
-### A Bitcoin Transaction (Tx)
+## A Bitcoin Transaction (Tx)
 
 A transaction in Bitcoin is a piece of information that transfers ownership of funds from one user to another,
 it carries inputs controlled by the sender and produces outputs controlled by the receiver once confirmed on the network.
 Each input is an unspent transaction output (UTXO) locked by a particular script of conditions. The fulfillment of these 
 conditions is the expenditure of the UTXO which generates new UTXO(s) locked by another script.
 
-### A Bitcoin Block
+## A Bitcoin Block
 
 A block is an assembly of valid transactions selected by a node from it's mempool. Once a node assembles transactions 
 into a block template, it starts the mining process to create an actual valid block that is broadcast to the network 
