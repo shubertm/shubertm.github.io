@@ -1,5 +1,5 @@
-import '../style.css'
-import { html } from './bitcoin-proof-of-work.md'
+import '../../style.css'
+import { html } from './technical-dive.md'
 
 const articleSpace = document.querySelector("#article-space");
 
