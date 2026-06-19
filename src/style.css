@@ -139,6 +139,10 @@ h1 {
     width: 12em;
 }
 
+#kadepay {
+    background: #82e49b;
+}
+
 .project-list li a .project-icon {
     width: 4em;
     margin-left: 1em;

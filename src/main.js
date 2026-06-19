@@ -97,6 +97,13 @@ const projectsPage = `
                     <img class="repo-host" src="./assets/github.svg" alt="github icon"/>
                 </a>
             </li>
+            <li>
+                <a id="kadepay" class="project" href="https://github.com/kadepayments">
+                    <img class="project-icon" src="./assets/kade_icon.svg" alt="project icon"/>
+                    <p><b>KadePayments</b></p>
+                    <img class="repo-host" src="./assets/github.svg" alt="github icon"/>
+                </a>
+            </li>
         </ul>
 `
 
