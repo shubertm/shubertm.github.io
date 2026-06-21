@@ -41,7 +41,7 @@ once the required proof of work is found.
 A block consists of a header and the list of transactions.
 
 [A Block in Bitcoin Core](https://github.com/bitcoin/bitcoin/blob/47da4f9b716d11294d4fb0f30b04a7bcf128cc14/src/primitives/block.h#L26-L110)
-```cpp {9}
+```cpp
 class CBlockHeader
 {
 public:

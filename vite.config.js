@@ -2,6 +2,7 @@ import {defineConfig} from "vite";
 import { resolve } from 'node:path';
 import vue from '@vitejs/plugin-vue';
 import { plugin as markdownPlugin } from 'vite-plugin-markdown';
+import markdownItPrism from "markdown-it-prism";
 
 export default defineConfig(
     {
@@ -9,6 +10,12 @@ export default defineConfig(
             vue(),
             markdownPlugin({
                 mode: ['vue', 'html'],
+                markdownIt: {
+                    html: true,
+                    linkify: true,
+                    typographer: true,
+                    plugins: [markdownItPrism]
+                },
             }),
         ],
         base: "./",
