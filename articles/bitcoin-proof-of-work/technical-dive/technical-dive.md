@@ -282,8 +282,8 @@ std::unique_ptr<CBlockTemplate> BlockAssembler::CreateNewBlock()
     // Fill in header
     pblock->hashPrevBlock  = pindexPrev->GetBlockHash();
     UpdateTime(pblock, chainparams.GetConsensus(), pindexPrev);
-    pblock->nBits          = GetNextWorkRequired(pindexPrev, pblock, chainparams.GetConsensus());
-    pblock->nNonce         = 0;
+    pblock->nBits = GetNextWorkRequired(pindexPrev, pblock, chainparams.GetConsensus());
+    pblock->nNonce = 0;
 
 
     if (m_options.test_block_validity) {
