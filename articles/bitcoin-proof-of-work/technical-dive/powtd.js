@@ -1,5 +1,6 @@
-import 'github-markdown-css/github-markdown-dark.css'
+import 'github-markdown-css/github-markdown.css'
 import '../../style.css'
+import DOMPurify from 'dompurify'
 
 import { html } from './technical-dive.md'
 
@@ -15,7 +16,6 @@ function accommodateCodeSnippets(rawHtml) {
 
     doc.querySelectorAll('pre').forEach((preElement) => {
         const container = document.createElement('div');
-        container.className = 'code-block';
         if (preElement.parentNode) {
             preElement.parentNode.insertBefore(container, preElement);
             container.appendChild(preElement);
@@ -27,6 +27,6 @@ function accommodateCodeSnippets(rawHtml) {
 
 articleSpace.innerHTML = `
   <div class="markdown-body">
-    ${accommodateCodeSnippets(html)}
+    ${DOMPurify.sanitize(accommodateCodeSnippets(html))}
   </div>
 `;

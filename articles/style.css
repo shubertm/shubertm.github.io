@@ -48,7 +48,6 @@ body {
         color: #213547;
         background-color: #ffffff;
     }
-
 }
 
 @media (prefers-color-scheme: dark) {
@@ -60,10 +59,6 @@ body {
         background-color: #374f67;
     }
     .markdown-body {
-        background-color: #213547;
-    }
-    .code-block {
-        color: #213547;
         background-color: #213547;
     }
 }
