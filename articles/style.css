@@ -4,13 +4,15 @@
     font-weight: 400;
 
     color-scheme: light dark;
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.markdown-body {
+    background-color: #242424;
 }
 
 header {
@@ -34,9 +36,29 @@ body {
     margin-left: 5vw;
 }
 
+@media (prefers-color-scheme: light) {
+    :root {
+        color: #213547;
+        background-color: #ffffff;
+    }
+    header {
+        background-color: #dee0e3;
+    }
+    .markdown-body {
+        color: #213547;
+        background-color: #ffffff;
+    }
+}
+
 @media (prefers-color-scheme: dark) {
     :root {
         color: #ffffff;
+        background-color: #213547;
+    }
+    header {
+        background-color: #374f67;
+    }
+    .markdown-body {
         background-color: #213547;
     }
 }

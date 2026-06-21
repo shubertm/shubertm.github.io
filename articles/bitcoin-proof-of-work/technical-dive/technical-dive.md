@@ -41,7 +41,7 @@ once the required proof of work is found.
 A block consists of a header and the list of transactions.
 
 [A Block in Bitcoin Core](https://github.com/bitcoin/bitcoin/blob/47da4f9b716d11294d4fb0f30b04a7bcf128cc14/src/primitives/block.h#L26-L110)
-```cpp {9}
+```cpp
 class CBlockHeader
 {
 public:
@@ -282,8 +282,8 @@ std::unique_ptr<CBlockTemplate> BlockAssembler::CreateNewBlock()
     // Fill in header
     pblock->hashPrevBlock  = pindexPrev->GetBlockHash();
     UpdateTime(pblock, chainparams.GetConsensus(), pindexPrev);
-    pblock->nBits          = GetNextWorkRequired(pindexPrev, pblock, chainparams.GetConsensus());
-    pblock->nNonce         = 0;
+    pblock->nBits = GetNextWorkRequired(pindexPrev, pblock, chainparams.GetConsensus());
+    pblock->nNonce = 0;
 
 
     if (m_options.test_block_validity) {
