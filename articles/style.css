@@ -12,17 +12,17 @@
 }
 
 .markdown-body {
+    margin-top: 1.5em;
     background-color: #242424;
 }
 
 header {
     display: flex;
     height: 10vh;
-    width: 100%;
     padding-right: 5vw;
     padding-left: 5vw;
     align-items: center;
-    background-color: #374f67;
+    background-color: #f2fafa;
 }
 
 body {
@@ -32,8 +32,8 @@ body {
 }
 
 #article-space {
-    margin-right: 5vw;
     margin-left: 5vw;
+    margin-right: 5vw;
 }
 
 @media (prefers-color-scheme: light) {
@@ -42,7 +42,7 @@ body {
         background-color: #ffffff;
     }
     header {
-        background-color: #dee0e3;
+        background-color: #f2fafa;
     }
     .markdown-body {
         color: #213547;
