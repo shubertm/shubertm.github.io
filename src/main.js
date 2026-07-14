@@ -97,6 +97,13 @@ const projectsPage = `
                     <img class="repo-host" src="./assets/github.svg" alt="github icon"/>
                 </a>
             </li>
+            <li>
+                <a id="kadepay" class="project" href="https://github.com/kadepayments">
+                    <img class="project-icon" src="./assets/kade_icon.svg" alt="project icon"/>
+                    <p><b>KadePayments</b></p>
+                    <img class="repo-host" src="./assets/github.svg" alt="github icon"/>
+                </a>
+            </li>
         </ul>
 `
 
@@ -108,8 +115,13 @@ const articlesPage = `
                 </a>
             </li>
             <li>
-                <a id="article-0001" class="article" href="/articles/bitcoin-proof-of-work/">
+                <a id="article-0001" class="article" href="/articles/bitcoin-proof-of-work/analogy/">
                     <p>Bitcoin's Proof of Work: An Analogy</p>
+                </a>
+            </li>
+            <li>
+                <a id="article-0002" class="article" href="/articles/bitcoin-proof-of-work/technical-dive/">
+                    <p>Bitcoin's Proof of Work: A Technical Dive</p>
                 </a>
             </li>
             <li>

@@ -4,8 +4,6 @@
     font-weight: 400;
 
     color-scheme: light dark;
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -13,14 +11,18 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.markdown-body {
+    margin-top: 1.5em;
+    background-color: #242424;
+}
+
 header {
     display: flex;
     height: 10vh;
-    width: 100%;
     padding-right: 5vw;
     padding-left: 5vw;
     align-items: center;
-    background-color: #374f67;
+    background-color: #f2fafa;
 }
 
 body {
@@ -30,13 +32,33 @@ body {
 }
 
 #article-space {
-    margin-right: 5vw;
     margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        color: #213547;
+        background-color: #ffffff;
+    }
+    header {
+        background-color: #f2fafa;
+    }
+    .markdown-body {
+        color: #213547;
+        background-color: #ffffff;
+    }
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         color: #ffffff;
+        background-color: #213547;
+    }
+    header {
+        background-color: #374f67;
+    }
+    .markdown-body {
         background-color: #213547;
     }
 }
