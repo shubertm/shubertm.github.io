@@ -23,7 +23,7 @@ A private key is used to sign and authorize spending coins or transfer ownership
 It should never be shared to anyone whom you do not want to control or spend all your money. 
 
 ### Public Key
-A public key is revealed to everybody on the network, it is generated from a private key using `SECP256K1`
+A public key is not a secret, it can be seen by any entity on the network, it is generated from a private key using `SECP256K1`
 elliptic curve.
 By cryptographic design, there is only one public key corresponding to one private key, that is why no
 entity can claim ownership to coins locked by a public key which they have no knowledge of the 
@@ -33,8 +33,9 @@ A public key is used to receive coins from other entities on the network, not fo
 entity can also send coins to themselves.
 A public key is shared to other entities if they want to send coins to the owner.
 
-A public key is shared in different formats which are called locking scripts. Locking scripts are built using
-`Bitcoin Script`, a small and restricted programming language.
+A public key is used to build some coin locking scripts, some locking scripts do not have a public key. This means coins
+can be locked entirely by conditions other than those that have a public key.
+Locking scripts are built using `Bitcoin Script`, a small and restricted programming language.
 Locking scripts are the actual information an entity shares to receive a payment.
 For the human eye locking scripts are hard to make sense of, therefore they are encoded into addresses.
 
@@ -60,7 +61,7 @@ Locking scripts are encoded into addresses using different procedures based on t
 - P2WPKH (Pay to Witness Public Key Hash)
   - Encoded to address using `Bech32`
 - P2WSH (Pay to Witness Script Hash)
-  - Encoded to address using `Bach32`
+  - Encoded to address using `Bech32`
 
 #### Taproot
 - P2TR (Pay to Taproot)
