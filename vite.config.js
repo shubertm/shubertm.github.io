@@ -27,6 +27,7 @@ export default defineConfig(
                     "bitcoin-freedom-money": resolve(__dirname, 'articles/bitcoin-freedom-money/index.html'),
                     "bitcoin-proof-of-work/analogy": resolve(__dirname, 'articles/bitcoin-proof-of-work/analogy/index.html'),
                     "bitcoin-proof-of-work/technical-dive": resolve(__dirname, 'articles/bitcoin-proof-of-work/technical-dive/index.html'),
+                    "bitcoin-key-and-addresses": resolve(__dirname, `articles/bitcoin-keys-and-addresses/index.html`),
                 },
             },
         },
